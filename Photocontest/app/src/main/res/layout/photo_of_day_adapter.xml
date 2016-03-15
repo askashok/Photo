@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/padding_title"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/image_icon"
+            android:layout_height="@dimen/image_icon"
+            android:id="@+id/namea_imag"
+            android:layout_marginLeft="@dimen/photo_margin_left"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="@dimen/commment_width"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/nama"
+            android:textSize="@dimen/medium"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/photo_margin_left"
+            android:layout_toRightOf="@+id/namea_imag"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/medium"
+            android:layout_toRightOf="@+id/nama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_text"
+            android:layout_centerVertical="true"
+            android:text="Jenifa"
+            android:textSize="@dimen/medium"
+            android:layout_marginLeft="@dimen/names_space"
+             android:layout_toRightOf="@+id/nama"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos"
+            android:textColor="#ffffff"
+            android:background="#409FBC"
+            android:id="@+id/photos_layout"
+           android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="@dimen/medium"
+            android:layout_marginRight="@dimen/ratingbar_vote"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/padding_title">
+
+        <ImageView
+            android:layout_width="@dimen/image_icon"
+            android:layout_height="@dimen/image_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginLeft="@dimen/photo_margin_left"
+            android:id="@+id/ratinga_image"/>
+        <TextView
+            android:layout_width="@dimen/commment_width"
+            android:layout_height="wrap_content"
+            android:text="Ratings"
+            android:layout_marginLeft="@dimen/photo_margin_left"
+            android:id="@+id/rating_text"
+            android:textSize="@dimen/medium"
+            android:layout_toRightOf="@+id/ratinga_image"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/medium"
+            android:layout_toRightOf="@+id/rating_text"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleIndicator"
+
+            android:layout_marginRight="@dimen/ratingbar_vote"
+            android:textSize="@dimen/medium"
+            android:layout_marginLeft="@dimen/names_space"
+           android:layout_toRightOf="@+id/rating_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/padding_title">
+
+        <ImageView
+            android:layout_width="@dimen/image_icon"
+            android:layout_height="@dimen/image_icon"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:id="@+id/commenta"
+            android:layout_marginLeft="@dimen/photo_margin_left"/>
+        <TextView
+            android:layout_width="@dimen/commment_width"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/medium"
+            android:layout_marginLeft="@dimen/photo_margin_left"
+            android:id="@+id/commment_id"
+            android:layout_toRightOf="@+id/commenta"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/medium"
+            android:id="@+id/come"
+            android:layout_toRightOf="@+id/commment_id"/>
+
+        <TextView
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/photo_edittext_height"
+            android:id="@+id/edit_comment"
+            android:textSize="@dimen/medium"
+          android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/names_space"
+            android:text="jeni"
+            android:background="@drawable/rectange_blue"
+            android:layout_marginRight="@dimen/ratingbar_vote"
+           android:layout_toRightOf="@+id/come"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

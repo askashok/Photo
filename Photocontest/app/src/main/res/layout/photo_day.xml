@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Photos Available"
+            android:gravity="center"
+            android:textSize="@dimen/big"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:id="@+id/photo_day_details"/>
+
+        <LinearLayout
+
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2b2b2b"
+            android:id="@+id/title_layout"
+           >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/title_image_hi"
+                    android:layout_height="@dimen/title_image_hi"
+                    android:padding="@dimen/title_padding"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Photo Of The Day"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/big"
+                    android:id="@+id/heading"
+                    android:textColor="#ffffff"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:id="@+id/photo_day_content"
+            android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/subtitle_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E5E5E"
+            android:padding="@dimen/photooftheday" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Vote :"
+                android:layout_marginLeft="@dimen/Yourvote_left"
+                android:textColor="#ffffff"
+
+                android:textSize="@dimen/medium"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar_one"
+                android:layout_width="wrap_content"
+                style="@style/CustomRatingBar"
+                android:isIndicator="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ratingbar_vote"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/images"
+            android:layout_below="@+id/subtitle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_hight"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_hight"
+                android:id="@+id/image_view"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#409FBC"
+            android:id="@+id/image_layout"
+            android:layout_below="@+id/images"
+            android:padding="@dimen/photooftheday">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/num_vote"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/medium"
+                android:layout_marginLeft="@dimen/Yourvote_left"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Votes"
+                android:textSize="@dimen/medium"
+                android:id="@+id/total_vote"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@+id/num_vote"
+                android:layout_centerVertical="true"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomRatingBar"
+                android:isIndicator="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ratingbar_vote"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout"
+            android:layout_above="@+id/ad_layout">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/photo_ofday_list"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+
+                android:divider="@null"></ListView>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ad_layout"
+                android:layout_alignParentBottom="true">
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    ads:adSize="SMART_BANNER"
+                    ads:adUnitId="@string/adUnitId" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

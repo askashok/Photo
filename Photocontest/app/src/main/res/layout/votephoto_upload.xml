@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#409FBC"
+    android:layout_gravity="center" >
+
+
+    <LinearLayout
+        android:layout_width="@dimen/imagewidth"
+        android:layout_height="@dimen/imagewidth"
+        android:orientation="horizontal">
+
+           <ImageView
+               android:layout_marginLeft="@dimen/marginleft_camare"
+                android:layout_gravity="center"
+                android:id="@+id/vote_snap_img"
+                android:layout_width="@dimen/imagewidth"
+                android:layout_height="@dimen/imagewidth"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/imagewidth"
+        android:layout_height="@dimen/imagewidth"
+        android:layout_marginLeft="@dimen/marginleft_camare"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/title_upload_edt"
+                android:layout_width="@dimen/imagewidth"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_white_corner"
+                android:hint="Title"
+                android:layout_marginTop="@dimen/top"
+                android:textSize="@dimen/medium"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#C5FFFC"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/marginfield" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/top"
+                android:background="@drawable/rectangle_white_corner"
+               >
+
+                <EditText
+                    android:id="@+id/description_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="@dimen/medium"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="#C5FFFC"
+                    android:hint="Description"
+                    android:layout_marginTop="@dimen/top"
+                    android:inputType="textCapSentences"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/marginfield"
+                android:background="@drawable/rectangle_white_corner"
+                android:layout_marginTop="@dimen/top">
+
+
+            <RatingBar
+                android:id="@+id/server_ratingBar"
+                style="@style/CustomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_centerInParent="true"
+                android:stepSize="0.5" />
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top"
+            android:background="#ffffff"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/padding_title"
+            android:paddingRight="@dimen/padding_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Submit"
+            android:textColor="#409FBC"
+            android:textSize="@dimen/medium" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+

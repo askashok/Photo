@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:id="@+id/snap_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2b2b2b"
+            >
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/title_image_hi"
+                android:layout_height="@dimen/title_image_hi"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_launcher"
+                android:padding="@dimen/title_padding"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="My Click"
+                android:textSize="@dimen/big"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/choose_camera_btn"
+                android:layout_width="@dimen/title_image_hi"
+                android:layout_height="@dimen/title_image_hi"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginRight="13dp"
+                android:padding="@dimen/title_padding"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/grid_view"
+            android:layout_below="@+id/title_layout"
+            android:layout_above="@+id/ad_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ExpandableListView
+                    android:id="@+id/history_ima"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:groupIndicator="@null"
+                    android:overScrollMode="never">
+
+                    </ExpandableListView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No Photo Available"
+                    android:id="@+id/photos_details"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/big"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ad_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/adUnitId" />
+
+            <LinearLayout
+                android:id="@+id/list_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                android:layout_alignParentBottom="true"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/todays_snap"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:padding="@dimen/submit_padding"
+                    android:background="#359EB9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:gravity="center"
+                    android:textSize="@dimen/big"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/history_snap"
+                    android:layout_weight="1"
+                    android:padding="@dimen/submit_padding"
+                    android:background="#000000"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="History"
+                    android:textSize="@dimen/big"
+                    />
+                <!-- <LinearLayout
+                     android:id="@+id/history_snap"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+
+                 </LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

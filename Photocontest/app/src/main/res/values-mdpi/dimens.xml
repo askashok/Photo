@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">11dp</dimen>
+        <dimen name="activity_vertical_margin">11dp</dimen>
+        <!-- Login -->
+        <dimen name="marginpadding">15dp</dimen>
+        <dimen name="fieldpadding">7dp</dimen>
+        <dimen name="view_width">120dp</dimen>
+       <dimen name="login_view_marginbottom">15dp</dimen>
+        <dimen name="marginfield">2dp</dimen>
+        <dimen name="menuimage_width">35dp</dimen>
+
+
+    <!--Photo of the day-->
+    <dimen name="photooftheday">10dp</dimen>
+    <dimen name="photo_margin_left">10dp</dimen>
+    <dimen name="image_icon">30dp</dimen>
+    <dimen name="edittext_width">160dp</dimen>
+    <dimen name="photo_edittext_height">35dp</dimen>
+    <dimen name="commment_width">50dp</dimen>
+    <dimen name="ratingbar_vote">10dp</dimen>
+
+         <!--Forgot password-->
+    <dimen name="forgot_psw_submit">30dp</dimen>
+    <dimen name="submit_padding">7dp</dimen>
+    <dimen name="forgot_psw_edit">5dp</dimen>
+
+    <!--create new account-->
+    <dimen name="newaccount_padding">5dp</dimen>
+
+    <dimen name="scroll_padding">10dp</dimen>
+    <dimen name="create_margin_top">10dp</dimen>
+
+        <!-- icon size -->
+        <dimen name="imagebig_size">55dp</dimen>
+        <dimen name="icon_small">20dp</dimen>
+        <!-- Create New Account -->
+        <dimen name="editmargin">15dp</dimen>
+    <dimen name="create_padding">5dp</dimen>
+
+        <!-- Text Size -->
+        <dimen name="medium">15sp</dimen>
+        <dimen name="big">18sp</dimen>
+        <!--Menu-->
+
+        <dimen name="slideicon">13dp</dimen>
+        <dimen name="marginleft">13dp</dimen>
+
+        <!--Icon Size-->
+        <dimen name="iconsize">26dp</dimen>
+        <dimen name="imagegridview">100dp</dimen>
+        <dimen name="padding_title">7dp</dimen>
+        <dimen name="imageheight">185dp</dimen>
+        <dimen name="imagewidth">165dp</dimen>
+        <!--Vote Photo-->
+        <dimen name="titleimage">23dp</dimen>
+        <dimen name="image_size">150dp</dimen>
+        <dimen name="image_width">200dp</dimen>
+        <dimen name="edittext_height">100dp</dimen>
+        <dimen name="ranking_image_hw">100dp</dimen>
+        <dimen name="rating_height">20dp</dimen>
+    <dimen name="nametext_width">50dp</dimen>
+    <dimen name="rankingmar_top">10dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="edit_text_width">150dp</dimen>
+    <dimen name="edit_text_he">40dp</dimen>
+    <dimen name="image_top">5dp</dimen>
+
+        <dimen name="ranking_image_margin">7dp</dimen>
+        <dimen name="Edittext_height">30dp</dimen>
+
+        <!---->
+
+    <!--View -->
+    <dimen name="viewdetail">5dp</dimen>
+
+    <!--Profile-->
+    <dimen name="profile_top">20dp</dimen>
+    <dimen name="profile_image_top">40dp</dimen>
+    <dimen name="profile_image_width">100dp</dimen>
+    </resources>
+
+

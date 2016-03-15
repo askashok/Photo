@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="8dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="@dimen/rank_margintop"
+                android:layout_marginLeft="8dp"
+                android:layout_width="@dimen/image_small_size"
+                android:layout_height="@dimen/image_small_size"
+                android:scaleType="fitXY"
+                android:id="@+id/image"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/myrank_top">
+                <TextView
+                    android:layout_width="@dimen/nametext_width"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="@dimen/medium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_name"
+                    android:text=" jenifaselv"
+                    android:textSize="@dimen/medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/rankingmar_top">
+                <TextView
+                    android:layout_width="@dimen/nametext_width"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/medium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_text"
+                    android:text="10/12/2014"
+                    android:textSize="@dimen/medium"
+                    android:layout_marginLeft="1dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40"
+                    android:layout_marginLeft="@dimen/vote_left"
+                    android:textSize="@dimen/medium"
+                    android:id="@+id/noofvoteedt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Votes"
+
+                    android:textSize="@dimen/medium"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/rankingmar_top">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_rate_adapter"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:isIndicator="true"
+                    style="@style/CustomRatingBar"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/position_left">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/posit"
+                        android:text="Position"
+                        android:textSize="@dimen/medium"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/colom"
+                        android:layout_toRightOf="@+id/posit"
+                        android:layout_marginLeft="3dp"
+                        android:text=":"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/vote_text"
+                        android:text="40"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/colom"
+                        android:textSize="@dimen/medium"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/image_icon"
+            android:layout_height="@dimen/image_icon"
+            android:id="@+id/comment_img"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_launcher"
+          android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_edt"
+            android:layout_marginLeft="10dp"
+            android:text="Comments"
+            android:textSize="@dimen/medium"
+            android:layout_centerVertical="true"
+           />
+
+        <TextView
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_he"
+            android:id="@+id/comment_edit"
+            android:textSize="@dimen/medium"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/myrankingmargin_left"
+            android:background="@drawable/rectange_blue"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

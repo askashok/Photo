@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:id="@+id/snap_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2b2b2b"
+            android:padding="@dimen/padding_title">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/iconsize"
+                android:layout_height="@dimen/iconsize"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Todays Snap"
+                android:textSize="@dimen/big"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/choose_camera_btn"
+                android:layout_width="@dimen/iconsize"
+                android:layout_height="@dimen/iconsize"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/grid_view"
+            android:layout_below="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/list_history">
+
+            <GridView
+                android:id="@+id/todays_img_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"></GridView>
+        </LinearLayout>
+
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/adUnitId" />
+        </LinearLayout>-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_gravity="center|center_vertical"
+        android:background="#359EB9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/marginfield">
+
+                <ImageView
+                    android:id="@+id/snap_img"
+                    android:layout_width="@dimen/imagewidth"
+                    android:layout_height="@dimen/imageheight"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/marginfield"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/editmargin"
+
+                    android:background="@drawable/border_edittext"
+                    android:padding="@dimen/marginfield">
+
+                    <AutoCompleteTextView
+                    android:id="@+id/selectarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:hint="Select Your Area"
+                    android:padding="@dimen/marginfield"
+
+                    />
+
+                    <ImageView
+                        android:id="@+id/location_img"
+                        android:layout_width="@dimen/icon_small"
+                        android:layout_height="@dimen/icon_small"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/shor_desctiption_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/editmargin"
+                    android:background="@drawable/border_edittext"
+                    android:hint="Short Description"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:padding="@dimen/marginfield" />
+
+                <TextView
+                    android:id="@+id/upload_img_server_btn"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/editmargin"
+                    android:background="@drawable/cornerradius"
+                    android:paddingBottom="@dimen/marginfield"
+                    android:paddingLeft="@dimen/padding_title"
+                    android:paddingRight="@dimen/padding_title"
+                    android:paddingTop="@dimen/marginfield"
+                    android:text="Submit"
+                    android:textSize="@dimen/big" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

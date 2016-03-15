@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/ranking_image_hw"
+            android:layout_height="@dimen/ranking_image_hw"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ranking_image_hw"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="@dimen/big" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginpadding"
+                    android:text="Name"
+                    android:textSize="@dimen/big" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/marginpadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/big"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:12:2015"
+                    android:textSize="@dimen/big"
+                    android:layout_marginLeft="@dimen/ranking_image_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/big"
+                    android:layout_marginLeft="@dimen/ranking_image_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Votes"
+                    android:textSize="@dimen/big"
+                    android:layout_marginLeft="@dimen/ranking_image_margin"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/marginpadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/marginfield"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    style="@style/CustomRatingBar"
+                    />
+                <TextView
+                    android:layout_toRightOf="@+id/ratingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11"
+                    android:layout_marginLeft="@dimen/marginfield"
+                    android:textSize="@dimen/big"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/marginfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/big"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/iconsize"
+            android:layout_height="@dimen/iconsize"
+            android:background="@drawable/ic_launcher"/>
+        <TextView
+            android:layout_marginLeft="@dimen/marginpadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"/>
+        <EditText
+            android:layout_marginLeft="@dimen/marginpadding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Edittext_height"
+            android:background="@drawable/border_edittext"
+            android:layout_marginRight="@dimen/marginfield"/>
+    </LinearLayout>
+</LinearLayout>

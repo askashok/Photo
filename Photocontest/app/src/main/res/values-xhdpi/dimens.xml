@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">22dp</dimen>
+        <dimen name="activity_vertical_margin">22dp</dimen>
+        <!-- Login -->
+        <dimen name="marginpadding">10dp</dimen>
+        <dimen name="fieldpadding">10dp</dimen>
+    <dimen name="emailaddresspadding">20dp</dimen>
+        <dimen name="view_width">240dp</dimen>
+      <dimen name="login_view_marginbottom">20dp</dimen>
+        <dimen name="marginfield">7dp</dimen>
+        <dimen name="menuimage_width">55dp</dimen>
+    <dimen name="login_View_bottom">20dp</dimen>
+
+    <!--Forgot password-->
+    <dimen name="forgot_psw_submit">150dp</dimen>
+    <dimen name="submit_padding">10dp</dimen>
+    <dimen name="forgot_psw_edit">4dp</dimen>
+    <dimen name="image_top">8dp</dimen>
+
+    <!--create new account-->
+    <dimen name="create_height">40dp</dimen>
+    <dimen name="newaccount_padding">15dp</dimen>
+    <dimen name="create_padding">10dp</dimen>
+    <dimen name="create_margin_top">20dp</dimen>
+    <dimen name="view_padding">5dp</dimen>
+    <dimen name="small">15dp</dimen>
+    <dimen name="view_bottom">10dp</dimen>
+
+
+    <!--camera activity-->
+    <dimen name="edittext_padding">20dp</dimen>
+    <dimen name="title_camera_padding">15dp</dimen>
+    <dimen name="edit_text_padding">2dp</dimen>
+    <dimen name="camera_imageheight">250dp</dimen>
+    <dimen name="top">10dp</dimen>
+
+        <!-- icon size -->
+        <dimen name="imagebig_size">90dp</dimen>
+        <dimen name="icon_small">20dp</dimen>
+        <!-- Create New Account -->
+        <dimen name="editmargin">30dp</dimen>
+
+    <!--agree terms and conditon-->
+    <dimen name="margin_top_agree">20dp</dimen>
+    <dimen name="padding_text">10dp</dimen>
+    <dimen name="check_box_left">20dp</dimen>
+    <dimen name="cancel_box_text_width">50dp</dimen>
+    <dimen name="cancel_text_right">20dp</dimen>
+    <dimen name="scrollview_padding">10dp</dimen>
+    <dimen name="layout_margin">20dp</dimen>
+    <dimen name="botton_padding">5dp</dimen>
+
+        <!-- Text Size -->
+        <dimen name="medium">16sp</dimen>
+        <dimen name="big">20sp</dimen>
+    <dimen name="vote_left">5dp</dimen>
+    <dimen name="position_left">20dp</dimen>
+
+    <!--Menu-->
+        <dimen name="mainimageheight">200dp</dimen>
+        <dimen name="slideicon">26dp</dimen>
+        <dimen name="marginleft">26dp</dimen>
+    <dimen name="smallballs_menu">15dp</dimen>
+    <dimen name="small_ball_width">30dp</dimen>
+    <dimen name="buy">25dp</dimen>
+    <dimen name="padding_menus">10dp</dimen>
+    <dimen name="title_padding">10dp</dimen>
+    <dimen name="title_image_hi">45dp</dimen>
+    <dimen name="image_margin_top">20dp</dimen>
+    <dimen name="spamuser_padding">5dp</dimen>
+
+
+    <!--Photo of the day-->
+    <dimen name="photooftheday">10dp</dimen>
+    <dimen name="photo_margin_left">5dp</dimen>
+    <dimen name="Yourvote_left">20dp</dimen>
+    <dimen name="image_icon">30dp</dimen>
+    <dimen name="edittext_width">160dp</dimen>
+    <dimen name="photo_edittext_height">40dp</dimen>
+    <dimen name="commment_width">100dp</dimen>
+    <dimen name="ratingbar_vote">10dp</dimen>
+    <dimen name="photoofday_mainimage_width">800dp</dimen>
+    <dimen name="photoofthe_main_hgt">400dp</dimen>
+    <dimen name="photooftheday_vote">60dp</dimen>
+    <dimen name="names_space">5dp</dimen>
+
+        <!--Icon Size-->
+        <dimen name="iconsize">50dp</dimen>
+        <dimen name="imagegridview">200dp</dimen>
+        <dimen name="padding_title">14dp</dimen>
+        <dimen name="imageheight">200dp</dimen>
+        <dimen name="imagewidth">175dp</dimen>
+    <dimen name="marginleft_camare">5dp</dimen>
+        <!--Vote Photo-->
+        <dimen name="titleimage">46dp</dimen>
+        <dimen name="image_size">170dp</dimen>
+       <dimen name="image_small_size">120dp</dimen>
+        <dimen name="image_width">400dp</dimen>
+        <dimen name="edittext_height">200dp</dimen>
+        <dimen name="ranking_image_hw">200dp</dimen>
+        <dimen name="rating_height">40dp</dimen>
+        <dimen name="ranking_image_margin">14dp</dimen>
+        <dimen name="Edittext_height">60dp</dimen>
+    <dimen name="nametext_width">45dp</dimen>
+    <dimen name="rankingmar_top">20dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="edit_text_width">200dp</dimen>
+    <dimen name="edit_text_he">50dp</dimen>
+    <dimen name="myrank_top">10dp</dimen>
+    <dimen name="myrankingmargin_left">15dp</dimen>
+        <!---->
+    <!--View -->
+    <dimen name="viewdetail">6dp</dimen>
+
+    <!--My ranking-->
+    <dimen name="rank_margintop">15dp</dimen>
+    <dimen name="rank_marginbotto">8dp</dimen>
+
+
+
+    <!--Profile-->
+    <dimen name="profile_top">20dp</dimen>
+    <dimen name="profile_image_top">40dp</dimen>
+    <dimen name="profile_image_width">100dp</dimen>
+
+    <!--settings-->
+    <dimen name="settings_padding">7dp</dimen>
+    <dimen name="marginleft_setting">23dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="rate_width">100dp</dimen>
+    <dimen name="settings_margin">15dp</dimen>
+    </resources>
+
+

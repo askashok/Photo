@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_screen"
+     android:paddingTop="@dimen/margin_top_agree" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <ImageView
+            android:layout_width="@dimen/imagebig_size"
+            android:layout_height="@dimen/imagebig_size"
+            android:src="@drawable/logo"
+             android:id="@+id/svg_image_id"
+             android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2E2E2"
+        android:layout_margin="@dimen/layout_margin"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_margin="@dimen/scrollview_padding"
+            android:layout_alignBottom="@+id/bottom_relative">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:id="@+id/rela"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium"
+                    android:id="@+id/first_text"
+                    android:padding="@dimen/padding_text"
+                    android:textStyle="bold"
+                    android:text="The types of information requested from you and the manner in which that information is collected and assessed are determined by the requirements of the country in which the position is located,and not the county in which you reside"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium"
+                    android:id="@+id/second_text"
+                    android:padding="@dimen/scrollview_padding"
+                    android:layout_marginTop="3dp"
+                   android:layout_below="@+id/first_text"
+                   android:text="By submitting your information,you acknowledge that you have read and understood and foregoing and consent to the uses of your information as set as above"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium"
+                    android:padding="@dimen/scrollview_padding"
+                    android:id="@+id/three_text"
+                    android:layout_below="@+id/second_text"
+                    android:text="You may read this statement at any time by logging into the system with your name and password."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium"
+                    android:id="@+id/four_text"
+                    android:padding="@dimen/scrollview_padding"
+                    android:layout_below="@+id/three_text"
+                    android:text="It is a condition of using this system that you maintain the confidentiality of this username/password and you are not permitted to share your username/password with others"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottom_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <CheckBox
+                android:layout_marginLeft="@dimen/check_box_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox"
+
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium"
+                android:padding="@dimen/scrollview_padding"
+                android:text="I have read and agree to the terms and conditions"
+                />
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+            android:padding="@dimen/botton_padding">
+
+            <TextView
+                android:layout_width="@dimen/cancel_box_text_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt"
+                android:text="Ok"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_marginRight="@dimen/ok_butt_text_right"
+                android:background="@drawable/rectangle_black"
+
+                android:layout_toLeftOf="@+id/cancel"/>
+            <TextView
+                android:layout_width="@dimen/cancel_box_text_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/cancel_text_right"
+                android:background="@drawable/rectangle_black"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

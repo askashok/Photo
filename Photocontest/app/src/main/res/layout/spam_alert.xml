@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/msg"
+            android:text="Is this photo was really spam??"
+            android:textSize="@dimen/medium"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok_butt"
+                android:gravity="center"
+                android:text="OK"
+                android:textStyle="bold"
+                android:textSize="@dimen/medium"
+                android:layout_toLeftOf="@+id/cancel_butt"
+                android:textColor="#ffffff"
+                android:layout_marginRight="30dp"
+                android:background="#000000"
+
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_butt"
+                android:text="Cancel"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="@dimen/medium"
+                android:background="#000000"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+

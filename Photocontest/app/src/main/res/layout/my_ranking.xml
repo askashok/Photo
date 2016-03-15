@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2b2b2b"
+        android:id="@+id/title"
+        android:padding="@dimen/title_padding">
+        <ImageView
+            android:layout_width="@dimen/image_icon"
+            android:layout_height="@dimen/image_icon"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_butt"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Ranking"
+            android:textSize="@dimen/big"
+            android:textColor="#ffffff"
+            android:id="@+id/headin"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_above="@+id/ad_lenear">
+       <ListView
+
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/rank_list"
+           android:divider="@null">
+
+        </ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Photos Available"
+                android:gravity="center"
+                android:textSize="@dimen/big"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:id="@+id/photo_day_details"/>
+
+
+       <!-- </LinearLayout>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ad_lenear"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/adUnitId" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">44dp</dimen>
+        <dimen name="activity_vertical_margin">44dp</dimen>
+        <!-- Login -->
+
+        <dimen name="marginpadding">10dp</dimen>
+        <dimen name="fieldpadding">10dp</dimen>
+        <dimen name="view_width">480dp</dimen>
+        <dimen name="login_view_marginbottom">20dp</dimen>
+        <dimen name="marginfield">6dp</dimen>
+        <dimen name="menuimage_width">60dp</dimen>
+
+    <!--Forgot password-->
+    <dimen name="forgot_psw_submit">180dp</dimen>
+    <dimen name="submit_padding">10dp</dimen>
+    <dimen name="forgot_psw_edit">5dp</dimen>
+
+
+    <!--Photo of the day-->
+    <dimen name="photooftheday">10dp</dimen>
+
+    <!--create new account-->
+
+    <dimen name="newaccount_padding">20dp</dimen>
+    <dimen name="create_padding">10dp</dimen>
+    <dimen name="scroll_padding">10dp</dimen>
+    <dimen name="create_height">50dp</dimen>
+
+        <!-- icon size -->
+        <dimen name="imagebig_size">100dp</dimen>
+        <dimen name="icon_small">20dp</dimen>
+        <!-- Create New Account -->
+        <dimen name="editmargin">60dp</dimen>
+        <dimen name="create_account_margintop">1dp</dimen>
+
+        <!-- Text Size -->
+        <dimen name="medium">15sp</dimen>
+        <dimen name="big">18sp</dimen>
+        <!--Menu-->
+
+        <dimen name="title_image_hi">50dp</dimen>
+        <dimen name="slideicon">52dp</dimen>
+        <dimen name="marginleft">52dp</dimen>
+    <dimen name="mainimageheight">180dp</dimen>
+
+        <!--Icon Size-->
+        <dimen name="iconsize">40dp</dimen>
+        <dimen name="imagegridview">400dp</dimen>
+        <dimen name="padding_title">15dp</dimen>
+        <dimen name="imageheight">160dp</dimen>
+        <dimen name="imagewidth">170dp</dimen>
+       <dimen name="marginleft_camare">5dp</dimen>
+       <dimen name="top">11dp</dimen>
+        <!--Vote Photo-->
+
+        <dimen name="image_size">170dp</dimen>
+        <dimen name="image_width">800dp</dimen>
+        <dimen name="edittext_height">400dp</dimen>
+        <dimen name="ranking_image_hw">400dp</dimen>
+        <dimen name="rating_height">80dp</dimen>
+        <dimen name="ranking_image_margin">28dp</dimen>
+        <dimen name="Edittext_height">120dp</dimen>
+    <dimen name="edittext_width">200dp</dimen>
+
+        <!---->
+    <!--View -->
+    <dimen name="viewdetail">15dp</dimen>
+    </resources>
+
+

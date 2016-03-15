@@ -1,0 +1,57 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Login -->
+    <dimen name="marginpadding">20dp</dimen>
+    <dimen name="fieldpadding">10dp</dimen>
+    <dimen name="view_width">155dp</dimen>
+    <dimen name="marginfield">5dp</dimen>
+    <dimen name="login_view_marginbottom">25dp</dimen>
+    <dimen name="menuimage_width">50dp</dimen>
+
+    <!--Forgot password-->
+    <dimen name="forgot_psw_submit">60dp</dimen>
+<dimen name="submit_padding">10dp</dimen>
+    <dimen name="forgot_psw_edit">5dp</dimen>
+
+    <!--create new account-->
+    <dimen name="newaccount_padding">5dp</dimen>
+    <dimen name="create_padding">10dp</dimen>
+    <dimen name="scroll_padding">10dp</dimen>
+
+    <!-- icon size -->
+    <dimen name="imagebig_size">75dp</dimen>
+    <dimen name="icon_small">25dp</dimen>
+    <!-- Create New Account -->
+    <dimen name="editmargin">20dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="medium">14sp</dimen>
+    <dimen name="big">18sp</dimen>
+    <!--Menu-->
+
+    <dimen name="slideicon">15dp</dimen>
+    <dimen name="marginleft">16dp</dimen>
+
+    <!--Icon Size-->
+    <dimen name="iconsize">35dp</dimen>
+    <dimen name="imagegridview">125dp</dimen>
+    <dimen name="padding_title">10dp</dimen>
+    <dimen name="imageheight">225dp</dimen>
+    <dimen name="imagewidth">195dp</dimen>
+    <!--Vote Photo-->
+    <dimen name="titleimage">35dp</dimen>
+    <dimen name="image_size">175dp</dimen>
+    <dimen name="image_width">250dp</dimen>
+    <dimen name="edittext_height">150dp</dimen>
+    <dimen name="ranking_image_hw">150dp</dimen>
+    <dimen name="rating_height">30dp</dimen>
+    <dimen name="ranking_image_margin">10dp</dimen>
+    <dimen name="Edittext_height">50dp</dimen>
+
+</resources>
